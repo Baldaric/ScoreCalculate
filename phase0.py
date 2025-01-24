@@ -42,7 +42,7 @@ def run():
 
     # Streamlit UI
     st.write("## Phase 0 Calculator")
-
+    st.image('booo.png')
     st.write("Enter your scores for each assessment:")
 
     # Input widgets for scores

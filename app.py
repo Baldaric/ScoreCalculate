@@ -6,6 +6,7 @@ import phase1
 st.set_page_config(page_title="Score Calculate", layout="wide")
 
 with st.sidebar:
+    st.image('ratna.png')
     st.title('About')
     st.write('Just to calculate your score')
     st.write('______')

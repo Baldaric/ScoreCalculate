@@ -28,7 +28,7 @@ def run():
 
     # Streamlit app
     st.write("## Phase 1 Calculator")
-
+    st.image('booo.png')
     st.write("Enter your scores for each assessment:")
 
     # User inputs for scores
