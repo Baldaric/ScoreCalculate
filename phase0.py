@@ -66,40 +66,40 @@ def run():
 
         calculate = st.button("Calculate")
     
-    if calculate:
-        st.write('#### **Your Final Score Calculation is:**')
         with cols2:
-        # Display the final score
-            st.markdown(
-                f"""
-                <div style="
-                    border: 2px solid #4CAF50; 
-                    border-radius: 10px; 
-                    padding: 10px; 
-                    background-color: #f9f9f9; 
-                    text-align: center; 
-                    font-size: 20px; 
-                    font-weight: bold; 
-                    color: #4CAF50;">
-                    {final_score:.2f}%
-                </div>
-                """,
-                unsafe_allow_html=True
-            )
-            st.write("*Note: This calculation is based solely on the scores provided. Other factors may influence the final outcome.*")
+            if calculate:
+                st.write('#### **Your Final Score Calculation is:**')
+                # Display the final score
+                st.markdown(
+                    f"""
+                    <div style="
+                        border: 2px solid #4CAF50; 
+                        border-radius: 10px; 
+                        padding: 10px; 
+                        background-color: #f9f9f9; 
+                        text-align: center; 
+                        font-size: 20px; 
+                        font-weight: bold; 
+                        color: #4CAF50;">
+                        {final_score:.2f}%
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+                st.write("*Note: This calculation is based solely on the scores provided. Other factors may influence the final outcome.*")
 
-            if final_score < 70:
-                st.write("### It's not a reason to give up")
-                st.image('1.jpg')
-            elif 70 >= final_score < 80:
-                st.write("### Now we're talking")
-                st.image('2.jpg')
-            elif 80 >= final_score < 95:
-                st.write("### How is it possible?")
-                st.image('3.jpg')
-            elif final_score >= 95: 
-                st.write("### A Freakin' Genius!!!")
-                st.image('4.jpg')
+                if final_score < 70:
+                    st.write("### It's not a reason to give up")
+                    st.image('1.jpg')
+                elif 70 >= final_score < 80:
+                    st.write("### Now we're talking")
+                    st.image('2.jpg')
+                elif 80 >= final_score < 95:
+                    st.write("### How is it possible?")
+                    st.image('3.jpg')
+                elif final_score >= 95: 
+                    st.write("### A Freakin' Genius!!!")
+                    st.image('4.jpg')
 
 if __name__ == "__main__":
     run()
