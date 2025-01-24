@@ -67,9 +67,9 @@ def run():
         calculate = st.button("Calculate")
     
     if calculate:
+        st.write('#### **Your Final Score Calculation is:**')
         with cols2:
         # Display the final score
-            st.write('#### **Your Final Score Calculation is:**')
             st.markdown(
                 f"""
                 <div style="
@@ -88,16 +88,16 @@ def run():
             )
             st.write("*Note: This calculation is based solely on the scores provided. Other factors may influence the final outcome.*")
 
-            if final_score < 50:
+            if final_score < 70:
                 st.write("### It's not a reason to give up")
                 st.image('1.jpg')
-            elif 50 >= final_score <70:
-                st.write("### Congratulations!")
+            elif 70 >= final_score < 80:
+                st.write("### Now we're talking")
                 st.image('2.jpg')
-            elif 70 >= final_score < 85:
+            elif 80 >= final_score < 95:
                 st.write("### How is it possible?")
                 st.image('3.jpg')
-            elif final_score >= 85: 
+            elif final_score >= 95: 
                 st.write("### A Freakin' Genius!!!")
                 st.image('4.jpg')
 
